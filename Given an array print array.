@@ -1,0 +1,9 @@
+def Recursion(arr,i):
+    if (i==len(arr)):
+        return 
+    print(arr[i])
+    Recursion(arr,i+1)
+arr=[2,3,4,1,8]
+i=0
+print(Recursion(arr,i))
+
