@@ -1,0 +1,9 @@
+# Online Python-3 Compiler (Interpreter)
+def Recursion(n):
+    if(n==0):
+        return
+    else:
+        Recursion(n-1)
+        print(n)
+n=5
+print(Recursion(n))
