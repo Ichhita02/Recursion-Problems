@@ -1,0 +1,8 @@
+def Recursion(n):
+    if(n==0):
+        return
+    else:
+        print(n)
+        Recursion(n-1)
+n=5
+print(Recursion(n))
