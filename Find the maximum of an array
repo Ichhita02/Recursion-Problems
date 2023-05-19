@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int max_ele(vector<int>v,int i){
+    if(v.size()-1==i) return v[i];
+    return max(v[i],max_ele(v,i+1));
+}
+int main(){
+    int n;
+    vector<int>v;
+    cout<<"Enter The Number : ";
+    cin>>n;
+    for(int i=0;i<n;i++){
+        int t;
+        cin>>t;
+        v.push_back(t);
+    }
+    cout<<max_ele(v,0);
+    return 0;
+}
